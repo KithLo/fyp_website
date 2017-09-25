@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)#page-top -->
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<title>Facial Expression Recognition</title>
+	<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+	<link href="./css/freelancer.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+	<link href="./css/gantt.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+	<link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body class="index" id="page-top" style="">
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#page-top">Facial Expression Recognition</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li class="page-scroll">
+						<a href="#page-top" onclick="ScrollToDiv(&#39;intro-section&#39;)">Home</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#features" onclick="ScrollToDiv(&#39;features&#39;)">Features</a>
+					</li>
+					<li class="page-scroll active">
+						<a href="#schedule" onclick="ScrollToDiv(&#39;schedule&#39;)">Schedule</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#team" onclick="ScrollToDiv(&#39;team&#39;)">The Team</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	
+	<!-- Page Header -->
+	<header>
+		<div class="container-fluid" id="intro-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6"><img alt="" class="img-responsive" height="80%" src="./files/main-page-phone.png"></div>
+					<div class="col-lg-6">
+						<h2 class="black-text">Travel Buddy!</h2>
+						<hr class="star-light">
+						<div class="intro-text">
+							<span class="skills">Your All-in-one trip planner</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- Features Section -->
+	<section class="features" id="features">
+		<div class="container-fluid">
+			<div class="row">
+				<h3 class="black-text" style="text-align:center; padding: 20px;">Features</h3><br>
+				<div class="row">
+					<div class="col-sm-12 col-md-4 text-center single-feature">
+						<img alt="" class="img-responsive center-block" src="./files/trip-planning.png">
+						<h6 class="black-text">Trip Planning made simple</h6>
+						<p class="description">A simple way of allowing the user to manage places to visit and also suggesting attractions and points of interest, based on reviews, to the user.</p>
+					</div>
+					<div class="col-sm-12 col-md-4 text-center single-feature">
+						<img alt="" class="img-responsive center-block" src="./files/shortest-path.png">
+						<h6 class="black-text">Shortest Path between Points of Interest</h6>
+						<p class="description">Select one or multiple destinations/attractions and find the shortest and most efficient route to visit all these destinations.</p>
+					</div>
+					<div class="col-sm-12 col-md-4 text-center single-feature">
+						<img alt="" class="img-responsive center-block" src="./files/friends.png">
+						<h6 class="black-text">Keep track of your friends</h6>
+						<p class="description">Using a combination of Bluetooth and GPS we allow you to keep track of your friends location and warn you if they are moving away from you.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-4 text-center single-feature">
+						<img alt="" class="img-responsive center-block" src="./files/feature-icon.png">
+						<h6 class="black-text">Auto-manage destination list</h6>
+						<p class="description">Keeps track of all the places you have visited and automatically removes them from your To-Visit list!</p>
+					</div>
+					<div class="col-sm-12 col-md-4 text-center single-feature">
+						<img alt="" class="img-responsive center-block" src="./files/feature-icon.png">
+						<h6 class="black-text">Useful global information</h6>
+						<p class="description">Current apps/websites provide info such as temperature and weather but some critical information like languages spoken, currency, conversion rates, electrical socket type and voltage information are not provided. The app would provide these details to the user when he/she is planning the trip</p>
+					</div>
+					<div class="col-sm-12 col-md-4 text-center single-feature">
+						<img alt="" class="img-responsive center-block" src="./files/ux.png">
+						<h6 class="black-text">Improved User Experience</h6>
+						<p class="description">Simplified user interface with only essential information displayed. No ads, no paragraph of text! We keep it simple and clean for you.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Schedule Section -->
+	<section class="success" id="schedule">
+		<div class="container-fluid">
+			<div class="row">
+				<h3 style="text-align:center; padding: 20px;">Schedule</h3><br>
+				<div class="container">
+					<div class="gantt" id="gantt"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- The team Section -->
+	<section class="team" id="team">
+		<div class="container-fluid">
+			<div class="row">
+				<h3 style="text-align:center; padding: 20px;">The Team</h3><br>
+				<div class="col-sm-12 col-md-6 col-lg-3 text-center team-member">
+					<img alt="" class="img-responsive center-block" src="./files/koushal.png">
+					<hr class="star-light">
+					<h5>Koushal Sadaful</h5>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-3 text-center team-member">
+					<img alt="" class="img-responsive center-block" src="./files/anisha.png">
+					<hr class="star-light">
+					<h5>Anisha Garg</h5>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-3 text-center team-member">
+					<img alt="" class="img-responsive center-block" src="./files/anirudh.png">
+					<hr class="star-light">
+					<h5>Anirudh Gupta</h5>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-3 text-center team-member">
+					<img alt="" class="img-responsive center-block" src="./files/twchim.png">
+					<hr class="star-light">
+					<h5>Dr. T.W. Chim</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Footer -->
+	<!--footer class="text-center" id="contact">
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						Copyright © All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer-->
+
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div class="scroll-top page-scroll visible-xs visible-sm">
+		<a class="btn btn-primary" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	
+	<!-- Bootstrap Core JavaScript --> 
+	<script src="./js/bootstrap.min.js"></script>
+	
+	<!-- Plugin JavaScript --> 
+	<script src="./js/classie.js"></script>
+	<script src="./js/cbpAnimatedHeader.js"></script>
+	
+	<!-- Custom Theme JavaScript --> 
+	<script src="./js/jquery.fn.gantt.min.js"></script>
+	<script>
+	       $(function() {
+	           "use strict";
+	           $(".gantt").gantt({
+	               source: [{
+	                   name: "Sprint 0",
+	                   desc: "Analysis",
+	                   values: [{
+	                       from: "/Date(99, 4, 24)/",
+	                       to: "/Date(99, 5, 24)/",
+	                       label: "Requirement Gathering",
+	                       customClass: "ganttRed"
+	                   }]
+	               }],
+	               navigate: "scroll",
+	               scale: "weeks",
+	               maxScale: "months",
+	               minScale: "hours",
+	               itemsPerPage: 10,
+	               useCookie: true,
+	               onItemClick: function(data) {
+
+	               },
+	               onAddClick: function(dt, rowId) {
+
+	               },
+	               onRender: function() {
+	                   if (window.console && typeof console.log === "function") {
+	                       console.log("chart rendered");
+	                   }
+	               }
+	           });
+
+	       });
+	</script> 
+	<script>
+	       function ScrollToDiv(id){  $('html, body').animate({ scrollTop: $("#"+id).offset().top-60  }, 2000); }
+	</script>
+</body>
+</html>
