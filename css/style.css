@@ -1,39 +1,90 @@
 #intro-section {
   background: url("../img/intro.jpg");
   background-size: cover;
+  color: #000
 }
 .center-block {
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto
+}
+section {
+  padding-top: 100px;
+  padding-bottom: 10px
+}
+section h2 {
+  margin: 0;
+  font-size: 3em
+}
+@media(max-width:767px) {
+  section {
+    padding: 75px 0
+  }
+  section.first {
+    padding-top: 75px
+  }
 }
 section > div.container-fluid {
   margin-top: -70px
 }
+section.schedule {
+  background: #8C3939
+}
+section.schedule h1,
+section.schedule h2,
+section.schedule h3,
+section.schedule h4,
+section.schedule h5,
+section.schedule h6  {
+  color: #fff
+}
+section.schedule a,
+section.schedule a:hover,
+section.schedule a:focus,
+section.schedule a:active,
+section.schedule a.active {
+  outline: 0;
+  color: #2c3e50
+}
 section.documents {
-  background: #fff;
-  color: #000000;
+  background: #fff
+}
+section.documents h1,
+section.documents h2,
+section.documents h3,
+section.documents h4,
+section.documents h5,
+section.documents h6 {
+  color: #000
+}
+section.team {
+  background: #000
+}
+section.team h1,
+section.team h2,
+section.team h3,
+section.team h4,
+section.team h5,
+section.team h6 {
+  color: #fff
 }
 #timeline {
   height: 600px;
-  width: 100%;
+  width: 100%
 }
 .team-member {
-  padding: 20px;
-}
-#intro-section {
-  color: #000000;
+  padding-top: 20px
 }
 .black-text {
-  color: #000000;
+  color: #000
 }
 .single-feature {
-  padding: 60px;
+  padding: 60px
 }
 .description {
   font-size: 16px;
-  text-align: justify;
+  text-align: justify
 }
 #gantt {
-  background: #fff;
+  background: #fff
 }
