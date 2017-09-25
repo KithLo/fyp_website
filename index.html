@@ -40,14 +40,14 @@
 					<li class="page-scroll">
 						<a href="#page-top" onclick="ScrollToDiv(&#39;intro-section&#39;)">Home</a>
 					</li>
-					<li class="page-scroll">
-						<a href="#documents" onclick="ScrollToDiv(&#39;documents&#39;)">Documents</a>
-					</li>
 					<li class="page-scroll active">
 						<a href="#schedule" onclick="ScrollToDiv(&#39;schedule&#39;)">Schedule</a>
 					</li>
 					<li class="page-scroll">
-						<a href="#team" onclick="ScrollToDiv(&#39;team&#39;)">The Team</a>
+						<a href="#documents" onclick="ScrollToDiv(&#39;documents&#39;)">Documents</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#team" onclick="ScrollToDiv(&#39;team&#39;)">Project Team</a>
 					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
@@ -61,7 +61,7 @@
 				<div class="row">
 					<div class="col-lg-6"><img alt="" class="img-responsive" height="100%" src=""></div>
 					<div class="col-lg-6">
-						<h2 class="black-text">Title</h2>
+						<h2 class="black-text">Facial Expression Recognition</h2>
 						<hr class="star-light">
 						<div class="intro-text">
 							<span class="skills">Description</span>
@@ -71,49 +71,6 @@
 			</div>
 		</div>
 	</header>
-	
-	<!-- Documents Section -->
-	<section class="documents" id="documents">
-		<div class="container-fluid">
-			<div class="row">
-				<h3 class="black-text" style="text-align:center; padding: 20px;">Documents</h3><br>
-				<div class="row">
-					<div class="col-sm-12 col-md-4 text-center single-feature">
-						<img alt="" class="img-responsive center-block" src="./files/trip-planning.png">
-						<h6 class="black-text">Title 1</h6>
-						<p class="description">Description 1</p>
-					</div>
-					<div class="col-sm-12 col-md-4 text-center single-feature">
-						<img alt="" class="img-responsive center-block" src="./files/shortest-path.png">
-						<h6 class="black-text">Title 2</h6>
-						<p class="description">Description 2</p>
-					</div>
-					<div class="col-sm-12 col-md-4 text-center single-feature">
-						<img alt="" class="img-responsive center-block" src="./files/friends.png">
-						<h6 class="black-text">Title 3</h6>
-						<p class="description">Description 3</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-4 text-center single-feature">
-						<img alt="" class="img-responsive center-block" src="./files/feature-icon.png">
-						<h6 class="black-text">Title 4</h6>
-						<p class="description">Description 4</p>
-					</div>
-					<div class="col-sm-12 col-md-4 text-center single-feature">
-						<img alt="" class="img-responsive center-block" src="./files/feature-icon.png">
-						<h6 class="black-text">Title 5</h6>
-						<p class="description">Description 5</p>
-					</div>
-					<div class="col-sm-12 col-md-4 text-center single-feature">
-						<img alt="" class="img-responsive center-block" src="./files/ux.png">
-						<h6 class="black-text">Title 6</h6>
-						<p class="description">Description 6</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	
 	<!-- Schedule Section -->
 	<section class="success" id="schedule">
@@ -126,12 +83,26 @@
 			</div>
 		</div>
 	</section>
+	
+	<!-- Documents Section -->
+	<section class="documents" id="documents">
+		<div class="container-fluid">
+			<div class="row">
+				<h3 class="black-text" style="text-align:center; padding: 20px; margin-bottom: -40px;">Documents</h3>
+				<div class="row">
+					<div class="col-sm-12 text-center single-feature">
+						<h5 class="black-text"><a href="">Project Plan</a></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!-- The team Section -->
 	<section class="team" id="team">
 		<div class="container-fluid">
 			<div class="row">
-				<h3 style="text-align:center; padding: 20px">The Team</h3>
+				<h3 style="text-align:center; padding: 20px">Project Team</h3>
 				<div class="col-sm-12 text-center team-member">
           <h5>Mak Tin Shing</h5>
           <h5>Lo Wang Kin</h5>
@@ -184,8 +155,8 @@
 	                   name: "Sprint 0",
 	                   desc: "Analysis",
 	                   values: [{
-	                       from: "/Date(99, 4, 24)/",
-	                       to: "/Date(99, 5, 24)/",
+	                       from: "/Date(2017, 9, 21)/",
+	                       to: "/Date(2017, 10, 01)/",
 	                       label: "Requirement Gathering",
 	                       customClass: "ganttRed"
 	                   }]
