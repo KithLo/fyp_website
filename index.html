@@ -35,16 +35,16 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="page-scroll">
-						<a href="#page-top" onclick="scrollToDiv(&#39;intro-section&#39;)">Home</a>
-					</li>
-					<li class="page-scroll active">
-						<a href="#schedule" onclick="scrollToDiv(&#39;schedule&#39;)">Schedule</a>
+						<a href="#page-top" onclick="scrollToDiv(this, &#39;intro-section&#39;)">Home</a>
 					</li>
 					<li class="page-scroll">
-						<a href="#documents" onclick="scrollToDiv(&#39;documents&#39;)">Documents</a>
+						<a href="#schedule" onclick="scrollToDiv(this, &#39;schedule&#39;)">Schedule</a>
 					</li>
 					<li class="page-scroll">
-						<a href="#team" onclick="scrollToDiv(&#39;team&#39;)">Project Team</a>
+						<a href="#documents" onclick="scrollToDiv(this, &#39;documents&#39;)">Documents</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#team" onclick="scrollToDiv(this, &#39;team&#39;)">Project Team</a>
 					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
@@ -272,10 +272,12 @@
         }
       });
     });
-	  function scrollToDiv(id){
+	  function scrollToDiv(el, id){
       $('html, body').animate({
         scrollTop: $("#"+id).offset().top-60
       }, 400);
+      $('.nav>.active').removeClass('active');
+      $(el).parent().addClass('active');
     }
 	</script>
 </body>
