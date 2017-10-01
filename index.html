@@ -262,9 +262,7 @@
         onItemClick: function(data) {},
         onAddClick: function(dt, rowId) {},
         onRender: function() {
-          $('.fn-label:empty').remove();
-          $('div.row.desc:empty').remove();
-          $('div.row.name:empty').remove();
+          $('div.leftPanel>div.row>.fn-label:empty').parent().remove();
           $('div.rightPanel').height($('div.leftPanel').height());
           if (window.console && typeof console.log === "function") {
             console.log("chart rendered");
