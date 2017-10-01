@@ -265,9 +265,9 @@
           $('.fn-label:empty').remove();
           $('div.row.desc:empty').remove();
           $('div.row.name:empty').remove();
+          $('div.rightPanel').height($('div.leftPanel').height());
           if (window.console && typeof console.log === "function") {
             console.log("chart rendered");
-            console.log($('div.rightPanel').height($('div.leftPanel').height()));
           }
         }
       });
