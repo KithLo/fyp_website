@@ -35,16 +35,16 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="page-scroll">
-						<a href="#page-top" onclick="ScrollToDiv(&#39;intro-section&#39;)">Home</a>
+						<a href="#page-top" onclick="scrollToDiv(&#39;intro-section&#39;)">Home</a>
 					</li>
 					<li class="page-scroll active">
-						<a href="#schedule" onclick="ScrollToDiv(&#39;schedule&#39;)">Schedule</a>
+						<a href="#schedule" onclick="scrollToDiv(&#39;schedule&#39;)">Schedule</a>
 					</li>
 					<li class="page-scroll">
-						<a href="#documents" onclick="ScrollToDiv(&#39;documents&#39;)">Documents</a>
+						<a href="#documents" onclick="scrollToDiv(&#39;documents&#39;)">Documents</a>
 					</li>
 					<li class="page-scroll">
-						<a href="#team" onclick="ScrollToDiv(&#39;team&#39;)">Project Team</a>
+						<a href="#team" onclick="scrollToDiv(&#39;team&#39;)">Project Team</a>
 					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
@@ -142,42 +142,58 @@
 	<!-- Custom Theme JavaScript --> 
 	<script src="./js/jquery.fn.gantt.min.js"></script>
 	<script>
-	       $(function() {
-	           "use strict";
-	           $(".gantt").gantt({
-	               source: [{
-	                   name: "Phase 0",
-	                   desc: "Analysis",
-	                   values: [{
-	                       from: "/Date(2017, 9, 21)/",
-	                       to: "/Date(2017, 10, 01)/",
-	                       label: "Requirement Gathering",
-	                       customClass: "ganttRed"
-	                   }]
-	               }],
-	               navigate: "scroll",
-	               scale: "weeks",
-	               maxScale: "months",
-	               minScale: "hours",
-	               itemsPerPage: 10,
-	               useCookie: true,
-	               onItemClick: function(data) {
-
-	               },
-	               onAddClick: function(dt, rowId) {
-
-	               },
-	               onRender: function() {
-	                   if (window.console && typeof console.log === "function") {
-	                       console.log("chart rendered");
-	                   }
-	               }
-	           });
-
-	       });
-	</script> 
-	<script>
-	       function ScrollToDiv(id){  $('html, body').animate({ scrollTop: $("#"+id).offset().top-60  }, 2000); }
+    $(function() {
+      $(".gantt").gantt({
+        source: [{
+          name: "Sprint 0 - Preparation",
+        },{
+          desc: "Gather Requirements",
+          values: [{
+            from: "/Date(2017, 09, 01)/",
+            to: "/Date(2017, 10, 01)/",
+            label: "Gather Requirements",
+            customClass: "ganttRed"
+          }]
+        },{
+          desc: "Study the data set",
+          values: [{
+            from: "/Date(2017, 09, 28)/",
+            to: "/Date(2017, 10, 10)/",
+            label: "Study the data set",
+            customClass: "ganttRed"
+          }]
+        },{
+          desc: "Project Plan",
+          values: [{
+            from: "/Date(2017, 09, 30)/",
+            to: "/Date(2017, 10, 01)/",
+            label: "Project Plan",
+            customClass: "ganttRed"
+          }]
+        }],
+        navigate: "scroll",
+        scale: "weeks",
+        maxScale: "months",
+        minScale: "hours",
+        itemsPerPage: 10,
+        useCookie: true,
+        onItemClick: function(data) {},
+        onAddClick: function(dt, rowId) {},
+        onRender: function() {
+          $('.fn-label:empty').remove();
+          $('div.row.desc:empty').remove();
+          $('div.row.name:empty').remove();
+          if (window.console && typeof console.log === "function") {
+            console.log("chart rendered");
+          }
+        }
+      });
+    });
+	  function scrollToDiv(id){
+      $('html, body').animate({
+        scrollTop: $("#"+id).offset().top-60
+      }, 400);
+    }
 	</script>
 </body>
 </html>
