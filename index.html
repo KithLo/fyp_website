@@ -60,7 +60,7 @@
 						<h2 class="black-text">Facial Expression Recognition</h2>
 						<hr class="star-light">
 						<div class="intro-text">
-							<span class="skills">Description</span>
+							<span class="skills">A </span>
 						</div>
 					</div>
 				</div>
@@ -151,15 +151,15 @@
           values: [{
             from: "/Date(2017, 09, 01)/",
             to: "/Date(2017, 10, 01)/",
-            label: "Gather Requirements",
+            label: "Requirements Gathering",
             customClass: "ganttRed"
           }]
         },{
           desc: "Study the data set",
           values: [{
             from: "/Date(2017, 09, 28)/",
-            to: "/Date(2017, 10, 10)/",
-            label: "Study the data set",
+            to: "/Date(2017, 10, 8)/",
+            label: "Study of data set",
             customClass: "ganttRed"
           }]
         },{
@@ -170,12 +170,94 @@
             label: "Project Plan",
             customClass: "ganttRed"
           }]
+        },{
+          name: "Sprint 1 - Baseline model",
+        },{
+          desc: "Implement the pre-trained CNN model",
+          values: [{
+            from: "/Date(2017, 10, 9)/",
+            to: "/Date(2017, 11, 15)/",
+            label: "CNN model",
+            customClass: "ganttOrange"
+          }]
+        },{
+          name: "Sprint 2: Faster R-CNN model",
+        },{
+          desc: "Design and implementation of R-CNN model",
+          values: [{
+            from: "/Date(2017, 11, 15)/",
+            to: "/Date(2017, 12, 31)/",
+            label: "R-CNN model",
+            customClass: "ganttGreen"
+          }]
+        },{
+          desc: "First Presentation",
+          values: [{
+            from: "/Date(2018, 01, 08)/",
+            to: "/Date(2018, 01, 12)/",
+            label: "First Presentation",
+            customClass: "ganttGreen"
+          }]
+        },{
+          desc: "Interim Report",
+          values: [{
+            from: "/Date(2018, 01, 20)/",
+            to: "/Date(2018, 01, 21)/",
+            label: "Interim Report",
+            customClass: "ganttGreen"
+          }]
+        },{
+          name: "Sprint 3: Selective search model",
+        },{
+          desc: "Design and implementation of selective search model",
+          values: [{
+            from: "/Date(2018, 01, 01)/",
+            to: "/Date(2018, 02, 15)/",
+            label: "Selective search model",
+            customClass: "ganttGreen"
+          }]
+        },{
+          name: "Sprint 4: Testing and optimization",
+        },{
+          desc: "Experiments on different techniques for combining regions",
+          values: [{
+            from: "/Date(2018, 02, 16)/",
+            to: "/Date(2018, 03, 31)/",
+            label: "Experiments",
+            customClass: "ganttGreen"
+          }]
+        },{
+          name: "Sprint 4: Finalization",
+        },{
+          desc: "Evaluate test results",
+          values: [{
+            from: "/Date(2018, 04, 01)/",
+            to: "/Date(2018, 04, 14)/",
+            label: "Evaluation",
+            customClass: "ganttGreen"
+          }]
+        },{
+          desc: "Final report",
+          values: [{
+            from: "/Date(2018, 04, 14)/",
+            to: "/Date(2018, 04, 15)/",
+            label: "Final report",
+            customClass: "ganttGreen"
+          }]
+        },{
+          desc: "Final presentation",
+          values: [{
+            from: "/Date(2018, 04, 16)/",
+            to: "/Date(2018, 04, 20)/",
+            label: "Final presentation",
+            customClass: "ganttGreen"
+          }]
         }],
         navigate: "scroll",
         scale: "weeks",
         maxScale: "months",
         minScale: "hours",
-        itemsPerPage: 10,
+        itemsPerPage: 20,
         useCookie: true,
         onItemClick: function(data) {},
         onAddClick: function(dt, rowId) {},
@@ -185,6 +267,7 @@
           $('div.row.name:empty').remove();
           if (window.console && typeof console.log === "function") {
             console.log("chart rendered");
+            console.log($('div.rightPanel').height($('div.leftPanel').height()));
           }
         }
       });

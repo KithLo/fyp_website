@@ -89,5 +89,9 @@ section.team h6 {
   background: #fff
 }
 .fn-gantt .leftPanel .name, .fn-gantt .leftPanel .desc, .fn-gantt .leftPanel .fn-label {
-    width: 100%
+  width: 100%;
+  height: 24px
+}
+.fn-gantt .leftPanel {
+  width: 300px
 }
